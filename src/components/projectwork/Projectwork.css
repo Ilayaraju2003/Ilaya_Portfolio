@@ -1,0 +1,107 @@
+/* Projects Section */
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--color-primary); /* keeps consistency with your theme */
+}
+.project__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Project Cards Grid */
+.projects__container {
+  display: grid;
+  padding: 2rem;
+  font-size: 1.5rem;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto; /* center grid */
+}
+
+/* Individual Project Card */
+.project__card {
+  background: var(--color-bg-variant);
+  padding: 1.5rem;
+  border-radius: 1rem;  
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.project__card:hover {
+    background: transparent;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Project Title */
+.project__card h3 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+/* Tech Stack Badges */
+.tech-stack {
+  margin-bottom: 1rem;
+}
+
+.tech-badge {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.4rem 0.9rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  background: #21262d;
+  color: var(--color-primary);
+  border: 1px solid #30363d;
+}
+
+
+/* Buttons */
+.btn-group {
+  margin-top: 1rem;
+
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  transition: 0.3s ease;
+  margin: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.btn:hover {
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .projects__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+

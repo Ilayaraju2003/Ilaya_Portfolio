@@ -1,0 +1,79 @@
+/* Section Styling */
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: 20px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.header__container {
+    text-align: center;
+    height: 75%;
+}
+
+
+/* action buttons */
+.action {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #007bff;
+}
+.header__container h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* social medias */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    padding: 0.5rem;
+    
+}
+.header__socials a {
+    color: var(--color-white);
+    transition: color 0.3s ease;
+}
+.header__socials a:hover {
+  transform: translateY(-6px);
+  color: var(--color-primary);
+
+}
+
+/* scroll down */
+.scroll__down {  
+    position: absolute;
+    right: 0;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header__container h1 {
+    font-size: 2.2rem;
+  }
+
+  .header__container h5 {
+    font-size: 1rem;
+  }
+
+}
