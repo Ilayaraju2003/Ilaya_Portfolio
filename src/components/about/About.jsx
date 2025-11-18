@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
-import Ilayaraju from "../../assets/ilayaraju.jpg"; // Adjust the path as necessary
+
+import profilePic from "../../assets/ilayaraju1.jpeg"; // Adjust the path as necessary
 
 
 const About = () => {
@@ -11,7 +12,7 @@ const About = () => {
       <div className="container about__container">
         <div >
           <div className="about__me-image">
-            <img src={Ilayaraju} alt="Description" />
+            <img src={profilePic} alt="Ilayaraju" />
           </div>
         </div>
         <div className="about__content">
