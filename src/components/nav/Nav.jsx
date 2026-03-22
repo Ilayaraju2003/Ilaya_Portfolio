@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Nav.css";
 import { BiHome, BiUser, BiCodeAlt, BiMessageDots } from "react-icons/bi";
 import { MdWorkOutline } from "react-icons/md";
-
+import ThemeToggle from "../themetoggle/ThemeToggle";
 const Nav = () => {
   const [active, setActive] = useState("#");
 
@@ -43,6 +43,8 @@ const Nav = () => {
       >
         <BiMessageDots />
       </a>
+
+         <ThemeToggle />
     </nav>
   );
 };
