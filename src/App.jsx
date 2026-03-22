@@ -1,4 +1,5 @@
 import React from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Header from './components/header/Header';
 import About from './components/about/About';
 import Projectwork from './components/projectwork/Projectwork';
@@ -17,6 +18,7 @@ const App = () => {
       <Projectwork />
       <Contact />
       <Footer />
+      <SpeedInsights />
     </div>
   );
 };
